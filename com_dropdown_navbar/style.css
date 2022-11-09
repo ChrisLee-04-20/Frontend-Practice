@@ -23,6 +23,11 @@
     padding: 10px 16px;
 }
 
+.meun li a:hover {
+    background-color: red;
+    transition: 0.5s;
+}
+
 .meun .dropdown {
     display: inline-block;
 }
@@ -34,11 +39,15 @@
 
 .meun .dropdown:hover .dropdown-content {
     display: block;
-
 }
 
-.meun .dropdown-content li a{
+.meun .dropdown-content li {
     display: block;
     background-color: grey;
     color: gold;
+}
+
+.meun .dropdown-content li a:hover {
+    background-color: goldenrod;
+    transition: 2s;
 }
