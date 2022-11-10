@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.meun ul {
+    background-color: darkgreen;
+    overflow: auto;
+}
+
+.meun ul li {
+    float: left;
+}
+
+.meun ul li a{
+    display: block;
+    padding: 1.5ch;
+    color: white;
+}
+
+.meun ul li a:hover{
+    background-color: black;
+}
+
+.meun .dropdown {
+    display: block;
+}
+
+.meun  .dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+}
+
+.meun  .dropdown:hover .dropdown-content {
+    display: grid;
+}
