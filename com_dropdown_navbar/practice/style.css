@@ -37,3 +37,18 @@
 .meun  .dropdown:hover .dropdown-content {
     display: grid;
 }
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2em;
+}
+
+article {
+    background-color: aqua;
+    font-size: 20px;
+    padding: 2em;
+}
