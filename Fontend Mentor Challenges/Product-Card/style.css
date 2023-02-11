@@ -1,0 +1,76 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+
+body{
+	background-color: hsl(30, 38%, 92%);
+}
+
+.context{
+	box-sizing: border-box;
+	margin-left: 5px;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	font-size: 14px;
+}
+
+.context p{
+	text-align: justify;
+}
+
+h1{
+	color: black;
+}
+
+b{	
+	font-size: 40px;
+	color: hsl(158, 36%, 37%);
+}
+
+s{	
+	display: flexbox;
+	height: 50px;
+	padding-bottom: 5px;
+	font-size: 15px;
+	padding-left: 20px;
+}
+
+.container{
+	box-sizing: border-box;
+	font-family: "Montserrat", Fraunces;
+	margin-top: 200px;
+	margin-left: 37%;
+	width: 500px;
+	height: 400px;
+	background-color: white;
+	border-radius: 10px;
+	position: static;
+	display: flex;
+	color: gray;
+}
+
+img{
+	width: 50%;
+	float: left;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.context button{
+	display: block;
+	margin-top: 40px;
+	width: 200px;
+	height: 50px;
+	border: 0;
+	border-radius: 5px;
+	background-color: hsl(158, 36%, 37%);
+	color: white;
+}
+
+.attribution { 
+font-size: 11px; 
+text-align: center; 
+}
+
+.attribution a { 
+color: hsl(228, 45%, 44%); 
+}
