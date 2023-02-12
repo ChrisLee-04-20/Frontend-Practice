@@ -1,0 +1,118 @@
+
+body{
+    margin: auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+h2{
+    color: white;
+}
+
+.nft-card-shadow {
+    background-color: hsl(217, 51%, 10%);
+    box-shadow: 0 0 30px hsl(217, 51%, 10%);
+    width: 450px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.nft-card{
+    box-shadow: 0 15px 10px hsl(219, 54%, 11%);
+    border-radius: 15px;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 380px;
+    height: 600px;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 50px;
+}
+
+.nft-card .content {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.nft-card .content p {
+    display: flex;
+    align-items: center;
+}
+
+.nft-card .content img {
+    margin-right: 10px;
+}
+
+
+#NFT-image{
+    width: 88%;
+    border-radius: inherit;   
+    align-self: center;
+    margin-top: 1em;
+}
+
+.label {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#value {
+    float: left;
+}
+
+#day-left {
+    float: right;
+}
+
+.creator-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.creator-info img{
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: white;
+}
+
+.creator-info hr {
+    border: 1px solid hsl(215, 32%, 27%);
+    width: 100%;
+}
+
+.nft-card .creator-info .creator {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 15px;
+}
+
+
+.nft-card .creator-info .creator span {
+    color: white;
+}
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
