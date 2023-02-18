@@ -26,48 +26,53 @@
     font-size: 16px;
 }
 
-.main-page .content img {
+.content > img {
     margin-bottom: 100px;
 }
 
-.main-page .content > h1 {
+.content > h1 {
     font-size: 60px;
     letter-spacing: 10px;
     margin-bottom: 50px;
 }
 
-.main-page .content > h1 > span {
+.content > h1 > span {
     color: hsl(0, 6%, 24%);
 }
 
-.main-page .content > p {
+.content > p {
     line-height: 30px;
     margin-bottom: 50px;
 }
 
-.main-page .content .submit-email {
+#email-form {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+#email-form > .email {
+    display: flex;
     align-items: center;
 }
 
-.main-page .content input {
+.content input {
     width: 450px;
     padding: 20px;
     border-radius: 30px;
     border: 1px solid hsl(0, 36%, 70%);
 }
 
-.main-page .content input:focus {
+.content input:focus {
     outline: none;
     border: 2px solid hsl(0, 93%, 68%);
 }
 
-.main-page .content input ::placeholder::after {
+.content input ::placeholder::after {
     background-image: url("./images/icon-arrow.svg");
 }
 
-.main-page .content .submit-email > button {
+.email > button {
     z-index: 1;
     margin-left: -100px;
     border-radius: 30px;
@@ -77,13 +82,26 @@
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
-.main-page .content .submit-email > button:hover {
+.email > button:hover {
     background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 100%, 98%));
     cursor: pointer;
 }
 
-.main-page .content .submit-email > button > img {
+.email > button > img {
     padding: 20px 50px;
+    margin-bottom: 0;
+}
+
+#error-icon {
+    display: none;
+    left: 32%;
+    bottom: 40%;
+    position: absolute;
+}
+
+#error-message {
+    visibility: hidden;
+    margin-left: 1.75em;
 }
 
 .main-page .main-image {
