@@ -1,4 +1,3 @@
-
 body{
     margin: auto;
     min-height: 100vh;
@@ -41,17 +40,17 @@ h2{
     margin-bottom: 50px;
 }
 
-.nft-card .content {
+.content {
     margin-left: 1.5em;
     margin-right: 1.5em;
 }
 
-.nft-card .content p {
+.content p {
     display: flex;
     align-items: center;
 }
 
-.nft-card .content img {
+.content img {
     margin-right: 10px;
 }
 

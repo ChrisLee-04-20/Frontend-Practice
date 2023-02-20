@@ -41,7 +41,7 @@ img{
 	border-bottom-left-radius: 10px;
 }
 
-.price, p{
+.price p{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -52,6 +52,10 @@ img{
 	font-size: 30px;
 	font-weight: bold;
 	color: hsl(158, 36%, 37%);
+}
+
+s {
+	font-size: 10px;
 }
 
 .context button{
@@ -66,6 +70,7 @@ img{
 }
 
 button:hover {
+	background-color: hsl(157, 37%, 19%);
 	cursor: pointer;
 }
 
