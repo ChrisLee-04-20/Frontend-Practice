@@ -35,13 +35,13 @@ h1 {
     flex-direction: column;
 }
 
-.summary .image img{
+.image img{
     width: 30rem;
     height: 200px;
     border-radius: 15px 15px 0 0 ;
 }
 
-.summary .content {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,20 +62,24 @@ h1 {
     justify-content: space-around;
 }
 
-.plan .plan-info {
+.plan-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 20px;
 }
 
-.plan .plan-info .plan-detail span p{
+.plan-detail span p{
     color: hsl(223, 47%, 23%);
     font-weight: bold;
 }
 
 .plan a {
     color: hsl(245, 75%, 52%); 
+}
+
+.plan a:hover {
+    color: hsl(224, 23%, 55%);
 }
 
 .content button {
@@ -97,12 +101,18 @@ h1 {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+#pay:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+
 #cancel {
     font-weight: bold;
     background-color: white;
 }
 
-
+#cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
