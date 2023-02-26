@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body, .report , .result, .summary{
+body, .report , .result, .summary, .mark{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body, .report , .result, .summary{
     min-height: 0;
     flex-direction: row;
     height: 55vh;
-    width: 50vw;
+    width: auto;
     border-radius: 3rem;
     box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.1) ;
 }
@@ -37,6 +37,7 @@ body, .report , .result, .summary{
 }
 
 #mark {
+    min-height: 0;
     width: 11rem;
     height: 11rem;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
@@ -71,6 +72,7 @@ body, .report , .result, .summary{
 .summary {
     background-color: whitesmoke;
     background-image: none;
+    row-gap: 1rem;
 }
 
 .summary > h2 {
@@ -88,8 +90,36 @@ body, .report , .result, .summary{
     display: flex;
     background-color: ghostwhite;
     border-radius: 0.6em;
-    padding: 1rem;
+    padding: 0.8rem;
     justify-content: space-between;
+}
+
+.summary-label:nth-child(2) > .summary-subtitle {
+    color: hsl(0, 100%, 67%);
+}
+
+.summary-label:nth-child(2) > .summary-subtitle {
+    color: hsl(39, 100%, 56%);
+}
+
+.summary-label:nth-child(2) > .summary-subtitle {
+    color: hsl(166, 100%, 37%);
+}
+
+.summary-label:nth-child(2) > .summary-subtitle {
+    color: hsl(234, 85%, 45%);
+}
+
+    
+.summary-subtitle {
+    display: flex;
+    align-content: center;
+    column-gap: 0.8em;
+}
+
+.summary-subtitle img {
+    width: auto;
+    align-self: center;
 }
 
 .summary-point > span {
@@ -98,8 +128,9 @@ body, .report , .result, .summary{
 }
 
 .summary button {
+    font-weight: bold;
     width: 100%;
-    padding: 0.7rem;
+    padding: 1rem;
     border: none;
     border-radius: 59px;
     background-color: hsl(224, 30%, 27%);
@@ -111,8 +142,51 @@ body, .report , .result, .summary{
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+
+@media screen and (max-width: 720px) {
+    body{
+        min-height: 0;
+        width: 100%;
+    }
+
+    .report {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .result {
+        row-gap: 1rem;
+    }
+
+    #mark {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .result span {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body{
+        width: 100%;
+    }
+
+    .report {
+        margin: 0 5rem 0 5rem;
+    }
+
+    .summary-label {
+        height: 5vh;
+    }
+}
+
 .attribution { 
     font-size: 11px; text-align: center; 
+    margin-top: 10%;
 }
 .attribution a {
      color: hsl(228, 45%, 44%); 
