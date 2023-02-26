@@ -94,7 +94,7 @@ body, .report , .result, .summary, .mark{
     justify-content: space-between;
 }
 
-.summary-label:nth-child(2) > .summary-subtitle {
+.summary-label:nth-child(1) > .summary-subtitle {
     color: hsl(0, 100%, 67%);
 }
 
@@ -102,11 +102,11 @@ body, .report , .result, .summary, .mark{
     color: hsl(39, 100%, 56%);
 }
 
-.summary-label:nth-child(2) > .summary-subtitle {
+.summary-label:nth-child(3) > .summary-subtitle {
     color: hsl(166, 100%, 37%);
 }
 
-.summary-label:nth-child(2) > .summary-subtitle {
+.summary-label:nth-child(4) > .summary-subtitle {
     color: hsl(234, 85%, 45%);
 }
 
