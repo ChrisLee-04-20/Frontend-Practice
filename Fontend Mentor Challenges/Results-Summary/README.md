@@ -1,4 +1,4 @@
-# Frontend Mentor - Results summary component Hosting 
+# Frontend Mentor - Results summary component  
 
 #URL: https://chrislee0420-result-summary.netlify.app/
 
