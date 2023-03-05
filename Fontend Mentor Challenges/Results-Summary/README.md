@@ -1,4 +1,6 @@
-# Frontend Mentor - Results summary component
+# Frontend Mentor - Results summary component  
+
+#URL: https://chrislee0420-result-summary.netlify.app/
 
 ![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
 
