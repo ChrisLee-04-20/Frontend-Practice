@@ -109,7 +109,6 @@ body, .report , .result, .summary, .mark{
 .summary-label:nth-child(4) > .summary-subtitle {
     color: hsl(234, 85%, 45%);
 }
-
     
 .summary-subtitle {
     display: flex;
@@ -141,7 +140,6 @@ body, .report , .result, .summary, .mark{
     cursor: pointer;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
-
 
 @media screen and (max-width: 720px) {
     body{

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Hanken+Grotesk:ital,wght@0,300;1,300&family=Josefin+Sans:ital,wght@0,300;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    font-family: "Epilogue", sans-serif;
+    color: hsl(0, 0%, 41%);
+    background-color: white;
+}
+
+nav {
+    padding: 1rem 1.75rem; 
+}
+
+nav, .nav-begin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-info li {
+    float: left;
+}
+
+li a {
+    text-decoration: none;
+    padding: 1rem 1.4rem;
+}
+
+.dropdown-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.dropdown-list li a {
+    display: flex;
+    width: 100%;
+    background-color: inherit;
+    justify-content: start;
+    column-gap: 1rem;
+}
+
+.dropdown-list li a img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#company-items {
+    margin-left: 2rem;
+}
+
+.nav-end, .nav-end a{
+    margin-right: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-end button {
+    padding: 0.55rem 1.3rem;
+    border: 1px solid hsl(0, 0%, 41%);
+    background-color: white;
+}
+
+.nav-end a:hover{
+    color: black;
+}
+
+.nav-end button:hover{
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 10px;
+}
+
+main {
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 70px;
+    color: black;
+}
+
+.main-content {
+    display: flex;
+    min-height: 70vh;
+    max-width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 15rem;
+    gap: 3rem;
+}
+
+.main-content > button {
+    max-width: 10vw;
+    padding: 13px 10px;
+    color: white;
+    background-color: black;
+}
+
+.main-content > button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.sponsor {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    column-gap: 2.2rem;
+}
+
+.sponsor img {
+    object-fit: contain;
+}
+
+.cover {
+    flex: 1;
+}
+
+.cover img {
+    object-fit: cover;
+    max-height: 70vh;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
