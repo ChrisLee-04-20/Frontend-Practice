@@ -21,7 +21,7 @@ body {
 }
 
 .cards-container {
-    height: 50vh;
+    height: auto;
     margin: 20vh auto;
     width: 50vw;
     display: flex;
@@ -76,13 +76,13 @@ body {
     width: 8rem;
     margin-top: 2rem;
     border-radius: 1.3rem;
-    border: 1px solid var(--trans-while);
+    border: 2px solid var(--trans-while);
     background-color: var(--very-light-gray);
     padding: 0.7rem;
 }
 
 .btn:hover{
-    border: 1px solid var(--trans-while);
+    border: 2px solid var(--trans-while);
     background-color: var(--trans-while);
     cursor: pointer;
 }
@@ -110,4 +110,24 @@ body {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (width < 481px) {
+    .cards-container {
+        flex-direction: column;
+        margin: 10vh auto;
+        width: 80vw;
+    }
+
+    .card {
+        width: inherit;
+    }
+
+    .card:first-child {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    
+    .card:last-child {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
 }
