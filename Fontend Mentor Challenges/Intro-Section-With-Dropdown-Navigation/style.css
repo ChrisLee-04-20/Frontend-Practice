@@ -19,30 +19,38 @@ nav, .nav-begin {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2.2rem;
 }
 
 .company-info li {
-    float: left;
+    display: inline-block;
 }
 
-li a {
+.company-info li a {
     text-decoration: none;
     padding: 1rem 1.4rem;
 }
 
 .dropdown-list {
+    display: block;
+    padding: 0.5rem;
+    background-color: white;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-right: 100px;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-list li a {
+.dropdown-list li {
+    display: block;
+}
+
+.dropdown-list li a{
     display: flex;
-    width: 100%;
-    background-color: inherit;
     justify-content: start;
     column-gap: 1rem;
+    padding: 0.8rem;
 }
 
 .dropdown-list li a img {
@@ -83,6 +91,7 @@ main {
     max-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 2rem;
 }
 
@@ -93,8 +102,8 @@ h1 {
 
 .main-content {
     display: flex;
-    min-height: 70vh;
-    max-width: 50%;
+    width: 50%;
+    height: auto;
     justify-content: center;
     flex-direction: column;
     padding: 5rem 15rem;
@@ -106,6 +115,7 @@ h1 {
     padding: 13px 10px;
     color: white;
     background-color: black;
+    border: 1px solid black;
 }
 
 .main-content > button:hover {
@@ -127,12 +137,12 @@ h1 {
 }
 
 .cover {
-    flex: 1;
+    background-color: aqua;
 }
 
 .cover img {
+    width: 50vh;
     object-fit: cover;
-    max-height: 70vh;
 }
 
 .attribution { 
