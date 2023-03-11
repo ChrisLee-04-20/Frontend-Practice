@@ -6,13 +6,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
   <nav>
     <div class="nav-begin">   
        <img src="images/logo.svg" >
         <ul class="company-info">
-          <li class="dropdown" id="#features-show">
+          <li class="dropdown" id="features-show">
             <a href="#">Features <img src="/images/icon-arrow-down.svg"></a>
             <ul class="dropdown-list" id="features-items">
               <li><a href="#"><img src="/images/icon-todo.svg">Todo List</a></li>
@@ -21,7 +22,7 @@
               <li><a href="#"><img src="/images/icon-planning.svg">Planning</a></li>
             </ul>
           </li>
-          <li class="dropdown">
+          <li class="dropdown" id="company-show">
             <a href="#">Company <img src="/images/icon-arrow-down.svg"></a>
             <ul class="dropdown-list" id="company-items">
               <li><a href="#">History</a></li>
