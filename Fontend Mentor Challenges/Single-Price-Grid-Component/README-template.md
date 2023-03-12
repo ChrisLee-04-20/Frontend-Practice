@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here]([[https://your-live-site-url.com](https://chrislee0420-single-price-component.netlify.app/)](https://chrislee0420-single-price-component.netlify.app/))
+- Live Site URL: [[Add live site URL here](https://chrislee0420-single-price-component.netlify.app/)]
 
 ## My process
 
