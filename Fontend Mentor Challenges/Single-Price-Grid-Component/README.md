@@ -8,8 +8,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [Built with/ What I learned](#Built-with-/-What-I-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
 
