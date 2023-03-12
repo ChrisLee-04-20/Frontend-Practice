@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Hanken+Grotesk:ital,wght@0,300;1,300&family=Josefin+Sans:ital,wght@0,300;1,500&display=swap');
 
 :root {
-    
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
 }
 
 *, *::after, *::before {
@@ -11,7 +13,7 @@
 }
 
 body {
-    color: hsl(0, 0%, 41%);
+    color: var(--Medium-Gray);
     background-color: white;
     list-style: none;
     font-size: 18px;
@@ -29,6 +31,10 @@ nav, .nav-begin {
     gap: 2.2rem;
 }
 
+.nav-begin > img {
+    margin-top: 0.4rem;
+}
+
 .company-info li {
     display: inline-block;
 }
@@ -37,6 +43,14 @@ nav, .nav-begin {
     text-decoration: none;
     padding: 1rem 1.4rem;
     position: relative;
+}
+
+.company-info li a:hover {
+    color: var(--Almost-Black);
+}
+
+.dropdown a > img {
+    margin: 10px 0 2px 0;
 }
 
 .dropdown-list {
@@ -62,7 +76,6 @@ nav, .nav-begin {
 }
 
 .dropdown-list li a img {
-    height: 100%;
     object-fit: cover;
 }
 
@@ -75,7 +88,16 @@ nav, .nav-begin {
     margin-left: 12rem;
 }
 
+.arrow {
+    transition: transform 0.5s;
+}
+
+.arrow-clicked {
+    transform: rotate(180deg);
+}
+
 .nav-end, .nav-end a{
+    margin-top: 2px;
     margin-right: 1.5rem;
     text-decoration: none;
 }
@@ -84,6 +106,7 @@ nav, .nav-begin {
     padding: 0.55rem 1.3rem;
     border: 1px solid hsl(0, 0%, 41%);
     background-color: white;
+    width: 6rem;
 }
 
 .nav-end a:hover{
@@ -91,6 +114,7 @@ nav, .nav-begin {
 }
 
 .nav-end button:hover{
+    font-weight: 600;
     color: black;
     border: 1px solid black;
     cursor: pointer;
@@ -114,18 +138,24 @@ h1 {
 }
 
 .main-content {
+    align-self: flex-end;
     display: flex;
+    min-height: 500px;
     width: 50%;
-    height: auto;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
-    padding: 5rem 15rem;
+    padding: 0 8rem 0 15rem;
     gap: 3rem;
 }
 
+.main-content > p {
+    line-height: 1.8rem;
+}
+
 .main-content > button {
-    max-width: 10vw;
-    padding: 13px 10px;
+    font-weight: 800;
+    width: 8rem;
+    padding: 15px;
     color: white;
     background-color: black;
     border: 1px solid black;
@@ -142,6 +172,7 @@ h1 {
     width: 50%;
     display: flex;
     justify-content: start;
+    margin-top: 5rem;
     column-gap: 2.2rem;
 }
 
@@ -154,8 +185,8 @@ h1 {
 }
 
 .cover img {
-    min-width: 300px;
     width: 500px;
+    height: auto;
     object-fit: cover;
 }
 
