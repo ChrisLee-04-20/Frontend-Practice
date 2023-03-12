@@ -5,27 +5,15 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the component depending on their device's screen size
-- See a hover state on desktop for the Sign Up call-to-action
 
 ### Screenshot
 
@@ -50,4 +38,4 @@ Also, I will practice the use of the flexbox and grid layout.
 
 ## Author
 
-- Frontend Mentor - [@ChrisLee-04-20] https://www.frontendmentor.io/profile/ChrisLee-04-20
+- Frontend Mentor - https://www.frontendmentor.io/profile/ChrisLee-04-20
