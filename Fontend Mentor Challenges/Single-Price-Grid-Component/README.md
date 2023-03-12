@@ -54,4 +54,4 @@ Also, I will practice the use of the flexbox and grid layout.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@ChrisLee-04-20]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/ChrisLee-04-20))
