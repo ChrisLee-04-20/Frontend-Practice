@@ -8,7 +8,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with/ What I learned](#Built-with-/-What-I-learned)
+  - [Built with / What I learned](#built-with-/-what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
 
@@ -21,6 +21,8 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 ### Links
 
 - Live Site URL: https://chrislee0420-single-price-component.netlify.app/
+
+## My process
 
 ### Built with / What I learned
 
