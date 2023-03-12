@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsla(178, 79%, 64%, 0.829);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Light-Gray);
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem 4rem;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    min-width: 150px;
+    height: auto;
+    padding: 1.7em 1.2em;
+}
+
+.header {
+    font-weight: bold;
+    color: var(--Cyan);
+}
+
+p {
+    line-height: 1.3em;
+    color: var(--Grayish-Blue);
+}
+
+span {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    margin-right: 5px;
+}
+
+.sub-header {
+    color: rgb(224, 224, 15);
+}
+
+.info-card:first-child {
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.info-card:nth-child(2) {
+    background-color: var(--Cyan);
+}
+
+.info-card:nth-child(2) > p {
+    color: white;
+}
+
+#fee {
+    color: var(--Grayish-Blue);
+}
+
+button {
+    padding: 0.7rem 1rem;
+    background-color: var(--Bright-Yellow);
+    border: none;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover, button:focus {
+    cursor: pointer;
+    background-color: rgb(224, 224, 15);
+    border: none;
+    outline: none;
+}
+
+.info-card:last-child > .header, .info-card:nth-child(2) > .header {
+    color: white;
+}
+
+
+.info-card:last-child {
+    background-color: var(--Grayish-Blue);
+    border-radius: 0 0 5px 5px;
+}
+
+.info-card:last-child > p {
+    color: var(--Light-Gray);
+}
+
+@media screen and (min-width: 480px){
+
+    body {
+        min-height: 80vh;
+    }
+
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 3rem 4rem;
+        max-width: 800px;
+    }
+
+    .info-card {
+        min-width: 200px;
+        height: auto;
+        padding: 1.5em 1.2em;
+    }
+
+    .info-card:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .info-card:nth-child(2) {   
+        border-radius: 0 0 0 5px;
+    }
+    
+    .info-card:last-child {   
+        border-radius: 0 0 5px 0;
+    }
+
+    button {
+        max-width: 150px;
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: black;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
