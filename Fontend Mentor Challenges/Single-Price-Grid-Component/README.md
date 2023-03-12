@@ -35,17 +35,13 @@ Users should be able to:
 
 - Live Site URL: https://chrislee0420-single-price-component.netlify.app/
 
-## My process
-
-### Built with
+### Built with / What I learned
 
 - HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-### What I learned
 
 ### Continued development
 
@@ -54,4 +50,4 @@ Also, I will practice the use of the flexbox and grid layout.
 
 ## Author
 
-- Frontend Mentor - [@ChrisLee-04-20]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/ChrisLee-04-20))
+- Frontend Mentor - [@ChrisLee-04-20] https://www.frontendmentor.io/profile/ChrisLee-04-20
