@@ -76,6 +76,7 @@ s {
 }
 
 .price {
+	margin-top: 1rem;
 	display: flex;
 	align-items: center;
 	column-gap: 1.3rem;
@@ -91,6 +92,7 @@ s {
 .product-content button {
 	width: 100%;
 	height: 3rem;
+	margin-top: 0.9rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
