@@ -53,6 +53,10 @@ body {
 	row-gap: 1rem;
 }
 
+.product-content > p {
+	line-height: 1.5rem;
+}
+
 h1 {
 	font-family: "Fraunces" sans-serif;
 	font-size: 2rem;
@@ -97,7 +101,7 @@ s {
 	padding: 0.4rem;
 }
 
-.product-content button > p {
+.product-content button > span {
 	color: white;
 }
 
