@@ -62,8 +62,16 @@ body {
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
+.card:first-child > .btn {
+    color: var(--bright-orange);
+}
+
 .card:nth-child(2) {
     background-color: var(--dark-cyan);
+}
+
+.card:nth-child(2) > .btn {
+    color: var(--dark-cyan);
 }
 
 .card:last-child {
@@ -71,11 +79,15 @@ body {
     border-radius: 0 0 0.5rem 0.5rem ;
 }
 
+.card:last-child  > .btn {
+    color: var(--very-dark-cyan);
+}
+
 .btn {
     width: 7.8rem;
     margin-top: auto;
     border-radius: 1.3rem;
-    border: 2px solid var(--trans-while);
+    border: 2px solid var(--very-light-gray);
     background-color: var(--very-light-gray);
     padding: 0.7rem;
 }
