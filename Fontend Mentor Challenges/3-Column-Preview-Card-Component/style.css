@@ -116,11 +116,7 @@ body {
     .cards-container {
         grid-template-columns: repeat(3, 1fr);
         flex-direction: column;
-        max-width: 70vw;
-    }
-
-    .card {
-        width: inherit;
+        max-width: 45vw;
     }
 
     .card:first-child {
@@ -129,5 +125,9 @@ body {
     
     .card:last-child {
         border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .btn {
+        margin-top: 3rem;
     }
 }
