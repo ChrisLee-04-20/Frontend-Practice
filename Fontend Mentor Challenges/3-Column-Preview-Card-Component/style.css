@@ -21,22 +21,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .cards-container {
     height: auto;
     margin: 20vh auto;
     max-width: 70%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
 }
 
 .card {
-    flex: 1;
-    align-self: normal;
-
     display: flex;
     justify-content: start;
     align-items: start;
@@ -44,10 +41,9 @@ body {
     padding: 3rem;
     row-gap: 2rem;
     color: var(--trans-while);
-    width: ;
 }
 
-.card > span > p {
+.card > h1 {
     font-size: 40px;
     color: var(--very-light-gray);
 }
@@ -63,7 +59,7 @@ body {
 
 .card:first-child {
     background-color: var(--bright-orange);
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .card:nth-child(2) {
@@ -72,11 +68,11 @@ body {
 
 .card:last-child {
     background-color: var(--very-dark-cyan);
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0 0 0.5rem 0.5rem ;
 }
 
 .btn {
-    width: 8rem;
+    width: 7.8rem;
     margin-top: auto;
     border-radius: 1.3rem;
     border: 2px solid var(--trans-while);
@@ -116,10 +112,11 @@ body {
     color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (width < 730px) {
+@media screen and (min-width : 700px) {
     .cards-container {
+        grid-template-columns: repeat(3, 1fr);
         flex-direction: column;
-        min-width: 60vw;
+        max-width: 70vw;
     }
 
     .card {
@@ -127,10 +124,10 @@ body {
     }
 
     .card:first-child {
-        border-radius: 0.5rem 0.5rem 0 0;
+        border-radius: 0.5rem 0 0 0.5rem ;
     }
     
     .card:last-child {
-        border-radius: 0 0 0.5rem 0.5rem;
+        border-radius: 0 0.5rem 0.5rem 0;
     }
 }
