@@ -10,33 +10,41 @@
 </head>
 <body>
   <nav>
-    <div class="nav-begin">   
-       <img src="images/logo.svg" >
-        <ul class="company-info">
-          <li class="dropdown" id="features-show">
-            <a href="#">Features <img class="arrow" id="arrow-features" src="/images/icon-arrow-down.svg"></a>
-            <ul class="dropdown-list " id="features-items">
-              <li><a href="#"><img src="/images/icon-todo.svg">Todo List</a></li>
-              <li><a href="#"><img src="/images/icon-calendar.svg">Calendar</a></li>
-              <li><a href="#"><img src="/images/icon-reminders.svg">Reminders</a></li>
-              <li><a href="#"><img src="/images/icon-planning.svg">Planning</a></li>
-            </ul>
-          </li>
-          <li class="dropdown" id="company-show">
-            <a href="#">Company <img class="arrow" id="arrow-company"src="/images/icon-arrow-down.svg"></a>
-            <ul class="dropdown-list" id="company-items">
-              <li><a href="#">History</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
+    <img src="images/logo.svg" >
+    <div class="nav-info-login">
+        <div class="nav-begin">   
+          <ul class="company-info">
+            <li class="dropdown" id="features-show">
+              <a href="#">Features <img class="arrow" id="arrow-features" src="/images/icon-arrow-down.svg"></a>
+              <ul class="dropdown-list " id="features-items">
+                <li><a href="#"><img src="/images/icon-todo.svg">Todo List</a></li>
+                <li><a href="#"><img src="/images/icon-calendar.svg">Calendar</a></li>
+                <li><a href="#"><img src="/images/icon-reminders.svg">Reminders</a></li>
+                <li><a href="#"><img src="/images/icon-planning.svg">Planning</a></li>
+              </ul>
+            </li>
+            <li class="dropdown" id="company-show">
+              <a href="#">Company <img class="arrow" id="arrow-company"src="/images/icon-arrow-down.svg"></a>
+              <ul class="dropdown-list" id="company-items">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="nav-end">
+          <a href="#">Login</a>
+          <button>Register</button>
+        </div>
     </div>
-    <div class="nav-end">
-      <a href="#">Login</a>
-      <button>Register</button>
+    <div class="mobile-list">
+      <a href="#" id="show-menu-icon">
+        <img src="./images/icon-menu.svg" id="menu-icon" alt="mobile-menu-icon">
+        <img src="./images/icon-close-menu.svg" id="close-icon" alt="mobile-close-icon">
+      </a>
     </div>
   </nav>
 
@@ -56,7 +64,8 @@
       </div>
     </div>
     <div class="cover">
-      <img src="images/image-hero-desktop.png">
+      <img src="images/image-hero-mobile.png" id="mobile-cover-img" style="display: none;">
+      <img src="images/image-hero-desktop.png" id= "desktop-cover-img" alt="">
     </div>
   </main>
 
