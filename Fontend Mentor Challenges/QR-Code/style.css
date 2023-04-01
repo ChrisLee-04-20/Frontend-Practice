@@ -1,15 +1,23 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: auto;
-    padding: 100px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
     background-color: hsl(212, 45%, 89%);
-    width: 1440px;
     font-family: Outfit;
     font-size: 15px;
+    line-height: 1.2rem;
 }
 
 h1 {
     color: hsl(218, 44%, 22%);
     font-size: 25px;
+    line-height: 2rem;
 }
 
 p {
@@ -19,37 +27,31 @@ p {
 
 img {
     border-radius: 20px;
-    width: 250px;
+    max-width: 275px;
+    margin-top: 1rem;
 }
 
 .qr-code {
-    /*set center positon*/
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    padding: 1em;
+    display: grid;
+    place-items: center;
     background-color: white;
-    width: 300px;
-    height: 440px;
+    max-width: 20rem;
+    min-height: 30rem;
     border-radius: 20px;
-
     text-align: center;
-
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3rem;
 }
 
-.container {
-    padding: 5px 10px;
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    row-gap: 0.8rem;
 }
 
-.attribution {
-    position: absolute;
-    bottom: 250px;
-    width: 75%;
-    font-size: medium;
-    text-align: center;
+footer {
+    bottom: 5%;
 }
 
 .attribution a {
