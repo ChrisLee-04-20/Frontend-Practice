@@ -53,8 +53,13 @@ nav > img {
     right: 1rem;
 }
 
+#menu-icon {
+    margin-top: 7px;
+}
+
 #close-icon {
     display: none;
+    margin-top: 5px;
 }
 
 .nav-info-login {

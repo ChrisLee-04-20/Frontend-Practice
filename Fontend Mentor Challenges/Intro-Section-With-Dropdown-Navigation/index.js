@@ -45,8 +45,8 @@ showMenuIcon.addEventListener("click", ()=> {
         closeIcon.style.display = "block";
         menuIcon.style.display =  "none";
         navInfoLogin.style.display = "flex";
-        document.body.style.backgroundColor = "#333333";
-        document.body.style.opacity = "0.7";
+        document.body.style.backgroundColor = "rgb(33 33 33 / 87%)";        
+        document.body.style.opacity = "0.5";
     }
     isMenuOpen = !isMenuOpen;
 })
