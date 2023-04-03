@@ -22,16 +22,19 @@ header {
 
 header img {
     margin-left: 2rem;
-    max-width: 7rem;
+    max-width: 10rem;
 }
 
 body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
     background-image: url(./images/bg-mobile.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: var(--Violet);
     font-family: "Open Sans" sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 main {
@@ -118,12 +121,10 @@ footer div i:hover {
     color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
     body {
-        background-image: url(./images/bg-desktop.svg) ;
-        background-size: cover;
-        background-position: center;
-        font-size: 16px;
+        background-image: url(./images/bg-desktop.svg);
+        font-size: 18px;
     }
 
     main {
@@ -131,6 +132,10 @@ footer div i:hover {
         column-gap: 2rem;
         text-align: start;
         margin: 0 5rem 0 5rem;
+    }
+
+    header > img {
+        max-width: 15rem;
     }
 
     main > img {
@@ -150,6 +155,8 @@ footer div i:hover {
     footer {
         min-height: 5rem;
         display: grid;
+        place-items: center;
+        width: 100%;
     }
 
     #icon {
