@@ -40,27 +40,23 @@ showMenuIcon.addEventListener("click", ()=> {
         menuIcon.style.display =  "block";
         navInfoLogin.style.display = "none";
         document.body.style.backgroundColor = "white";
-        document.body.style.opacity = "1";
     } else {
         closeIcon.style.display = "block";
         menuIcon.style.display =  "none";
         navInfoLogin.style.display = "flex";
         document.body.style.backgroundColor = "rgb(33 33 33 / 87%)";        
-        document.body.style.opacity = "0.5";
     }
     isMenuOpen = !isMenuOpen;
 })
 
 //detect the screen size and change the cover img
 document.onreadystatechange = changeCoverImg;
-
-//
 window.addEventListener("resize", changeCoverImg);
 
 function changeCoverImg() {
     const mobileImg = document.getElementById("mobile-cover-img");
     const desktopImg = document.getElementById("desktop-cover-img");
-    if(window.innerWidth > 850) {
+    if(window.innerWidth > 849) {
         mobileImg.style.display = "none";
         desktopImg.style.display = "block";
     } else {
@@ -68,3 +64,4 @@ function changeCoverImg() {
         desktopImg.style.display = "none";
     }
 }
+//detect the screen size and change the cover img
