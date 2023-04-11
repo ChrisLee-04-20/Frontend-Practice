@@ -52,7 +52,7 @@ header {
 }
 
 .nav-bar > img {
-    width: max(4.5rem, 7%);
+    width: max(5rem, 10%);
 }
 
 .menu-bar {
@@ -75,7 +75,7 @@ header {
 
 /* header */
 
-main {
+main, footer {
     display: grid;
     place-items: center;
     background-color: var(--main-background);
@@ -115,7 +115,6 @@ main {
 
 /* intro-section */
 
-
 /* service-features */
 
 .service-features {
@@ -151,7 +150,8 @@ main {
 }
 
 .service-explan-content > a {
-
+    display: flex;
+    align-items: end;
     color: var(--blue);
     width: 10rem;
 }
@@ -167,9 +167,180 @@ main {
 
 /* service-explan-container */
 
+/* user-comment */
+
+.user-comment {
+    padding: 1rem;
+}
+
+.comments-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.comments-container {
+    row-gap: 2rem;
+}
+
+.comment-card {
+    background-color: var(--testimonials-background);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    row-gap: 0.5rem;
+    max-width: 25rem;
+    box-shadow: 0 0 15px rgba(31, 30, 30, 0.438);
+}
+
+.comment-card:first-of-type {
+    position: relative;
+}
+
+.comment-card > img {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    width: min(2rem, 10%);
+    z-index: 1;
+}
+
+.comment-card p {
+    font-size: 10px;
+    line-height: 1.25rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.creator-info {
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+
+.creator-info p {
+    font-size: 6px;
+}
+
+.creator-info > img {
+    height: 1.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* user-comment */
+
+/* email-section */
+
+.email-section {
+    margin-top: 7.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.email-card {
+    background-color: var(--intro-email-background);
+    text-align: center;
+    max-width: 85%;
+    display: grid;
+    place-items: center;
+    line-height: 1.5rem;
+    row-gap: 2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.email-input {
+    display: flex;
+    align-items: center;
+    row-gap: 1.5rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.email-input > button, .email-input > input {
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--blue);
+    padding: 0.8rem;
+    border-radius: 3rem;
+    width: 90%;
+    transition: all 0.7s ease;
+    border: none;
+    box-shadow: 0 0 15px rgba(31, 30, 30, 0.438);
+}
+
+.email-input > input {
+    background-color: var(--white);
+    padding-left: 2rem;
+    color: var(--main-background);
+}
+
+.email-input > button:hover {
+    background-color: var(--cyan);
+    cursor: pointer;
+}
+
+/* email-section */
+
+/* contact-container */
+
+.contact-container {
+    display: grid;
+    row-gap: 2.5rem;
+}
+
+.contact-info {
+    background-color: var(--footer-background);
+    padding: 4rem 2rem;
+}
+
+.contact-start {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+.contact-start > img {
+    width: max(9rem, 25%);
+}
+
+.contact-ways {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-ways span {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.contact-ways span:first-of-type > img {
+   min-width: 18px;
+}
+
+.contact-mid ul li, .contact-end ul li {
+    padding: 1rem;
+}
+
+.contact-mid ul li a, .contact-end ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* contact-container */
+
 @media screen and (min-width: 768px) {
     .intro-section {
         padding: 0 15%;
+        background-image: url(./images/bg-curvy-desktop.svg);
     }
 
     .service-features {
@@ -182,12 +353,44 @@ main {
 
     .service-explan-container {
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 1rem;
+        place-items: center;
     }
 
     .service-explan-content {
         justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .user-comment {
         padding: 2rem;
+    }
+
+    .comments-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .comment-card {
+        max-width: 22.5rem;
+        row-gap: 1.5rem;
+    }
+
+    .email-card {
+        max-width: 60%;
+    }
+
+    .email-input {
+        flex-direction: row;
+        column-gap: 1.5rem;
+        max-width: 80%;
+    }
+
+    .email-input > button {
+        flex: 40% 0 0;
+    }
+
+    .contact-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -201,10 +404,10 @@ main {
     }
 }
 
-.attribution { 
+/* .attribution { 
     font-size: 11px; text-align: center; 
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
-}
+} */
