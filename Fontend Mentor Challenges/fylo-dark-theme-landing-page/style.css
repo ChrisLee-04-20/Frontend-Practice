@@ -254,8 +254,9 @@ main, footer {
 }
 
 .email-input {
+    position: relative;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     row-gap: 1.5rem;
     flex-direction: column;
     width: 100%;
@@ -267,16 +268,25 @@ main, footer {
     background-color: var(--blue);
     padding: 0.8rem;
     border-radius: 3rem;
-    width: 95%;
     transition: all 0.7s ease;
     border: none;
     box-shadow: 0 0 15px rgba(31, 30, 30, 0.438);
 }
 
 .email-input > input {
+    flex-basis: 60%;
     background-color: var(--white);
     padding-left: 2rem;
     color: var(--main-background);
+}
+
+#email-err {
+    display: none;
+    position: absolute;
+    font-size: 10px;
+    top: 2.5rem;
+    left: 0.5rem;
+    color: var(--light-red);
 }
 
 .email-input > button:hover {
@@ -406,6 +416,7 @@ main, footer {
         flex-direction: row;
         column-gap: 1.5rem;
         max-width: 80%;
+        max-height: 2.5rem;
     }
 
     .email-input > button {
