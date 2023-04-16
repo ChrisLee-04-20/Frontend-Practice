@@ -46,15 +46,9 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 ### What I learned
 
-
-### Continued development
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- Setting the margin with negative value
+- Using the grid and flex at the same time for different layout 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - https://www.frontendmentor.io/profile/ChrisLee-04-20
