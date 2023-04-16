@@ -5,9 +5,8 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -20,7 +19,9 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 ## Overview
 
-### The challenge
+### Links
+
+- Live Site URL: https://chrislee0420-fylo-dark-landing-page.netlify.app/
 
 ### Screenshot
 
@@ -29,10 +30,6 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 ### Mobile view
 ![](images/mobile-prewiew.png)
-
-### Links
-
-- Live Site URL: https://chrislee0420-fylo-dark-landing-page.netlify.app/
 
 ## My process
 
