@@ -3,8 +3,8 @@ const email = document.getElementById("email");
 
 function isEmailValid() {
     const emailValue = email.value;
-
-    if (!emailValue.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+    const validEmailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    if (!emailValue.match(validEmailRegex)) {
         displayErrorMessage()
     } else {
         noErrorMessage();
