@@ -16,7 +16,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Screenshot
 
-### Design view
+### Desktop view
 ![](images/desktop-preview.png)
 
 ### Mobile view

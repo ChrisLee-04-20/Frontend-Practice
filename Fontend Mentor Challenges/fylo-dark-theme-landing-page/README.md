@@ -24,11 +24,11 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 ### Screenshot
 
-### Design view
+### Desktop view
 ![](images/desktop-preview.png)
 
 ### Mobile view
-![](images/mobile-preview.png)
+![](images/mobile-prewiew.png)
 
 ### Links
 
