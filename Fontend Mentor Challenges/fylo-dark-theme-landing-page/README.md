@@ -25,6 +25,8 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 ### Screenshot
 
 ### Design view
+
+### Desktop view
 ![](images/desktop-preview.png)
 
 ### Mobile view
