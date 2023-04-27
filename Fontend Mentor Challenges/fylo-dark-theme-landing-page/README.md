@@ -5,34 +5,28 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-### The challenge
+### Links
+
+- Live Site URL: https://chrislee0420-fylo-dark-landing-page.netlify.app/
 
 ### Screenshot
 
 ### Desktop view
-![](images/desktop-preview.png)
+![](images/desktop-prevIew.png)
 
 ### Mobile view
 ![](images/mobile-prewiew.png)
-
-### Links
-
-- Live Site URL: https://chrislee0420-fylo-dark-landing-page.netlify.app/
 
 ## My process
 
@@ -46,15 +40,9 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
 
 ### What I learned
 
-
-### Continued development
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- Setting the margin with negative value
+- Using the grid and flex at the same time for different layout 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - https://www.frontendmentor.io/profile/ChrisLee-04-20
