@@ -80,6 +80,7 @@ nav > img {
 }
 
 .nav-info-login {
+    flex-direction: column;
     overflow: hidden;
     background-color: white;
     height: 100%;
@@ -89,7 +90,6 @@ nav > img {
     right: 0;
     position: fixed;
     display: none;
-    flex-direction: column;
 }
 
 .company-info li {
@@ -143,7 +143,7 @@ nav > img {
 }
 
 .arrow {
-    transition: transform 0.5s;
+    transition: transform 0.7s;
 }
 
 .arrow-clicked {
@@ -222,7 +222,7 @@ main {
 .sponsor {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 2rem;
     column-gap: 2rem;
 }
@@ -230,8 +230,6 @@ main {
 .sponsor img {
     min-width: 3.5rem;
     flex-shrink: 1;
-    /* width: 50%; */
-    /* height: 50%; */
     object-fit: contain;
 }
 
@@ -335,7 +333,6 @@ main {
     .cover img {
         max-width: 30em;
         min-height: 100%;
-        /* aspect-ratio: 1 / 1; */
     }
 
 }

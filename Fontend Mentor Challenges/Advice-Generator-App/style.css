@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body, main {
+    font-family: "Manrope", sans-serif;
+    background-color: var(--dark-blue);
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+
+    animation-name: fade;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+main {
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    position: relative;
+    background-color: var(--dark-grayish-blue);
+    color: var(--light-cyan);
+    min-height: 24rem;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--dark-grayish-blue);
+    transition: all ease 2s;
+}
+
+.card > img {
+    min-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card > small {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: var(--neon-green);
+}
+
+#text {
+    font-weight: 800;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 28px;
+}
+
+.circle {
+    bottom: -10%;
+    position: absolute;
+}
+
+.circle a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    transition: all ease 1s;
+}
+
+.circle a:hover {
+    box-shadow: 0 0 15px rgb(180, 250, 134);
+}
+
+@-webkit-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-o-keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
