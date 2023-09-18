@@ -112,6 +112,10 @@ main {
     height: 100%;
 }
 
+.image-container > img {
+    width: 100%;
+}
+
 img {
     max-width: 100%;
     height: 100%;
@@ -292,6 +296,10 @@ footer {
 }
 
 @media screen and (width > 720px) {
+    header {
+        background-image: url(./images/desktop/image-header.jpg);
+    }
+
     .nav-bar-menu {
         display: flex;
         position: static;
@@ -318,6 +326,14 @@ footer {
     .image-info-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #first-image-container {
+        grid-column: 2 / 3;
+    }
+
+    #first-info-container {
+        grid-row: 1 / 2;
     }
 
     .info-container {
