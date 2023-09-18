@@ -10,21 +10,21 @@
 </head>
 <body>
   <main class="main-page">
+    <div class="logo"><img src="./images/logo.svg"></div>
     <div class="content">
-      <img src="./images/logo.svg">
       <h1>WE'RE <span>COMING SOON<span></h1>
       <p>Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
       <form id="email-form">
         <div class="email">
           <input type="email" id="email" placeholder="Email Address" required  formnovalidate="formnovalidate" onkeyup="isEmailValid()"/>
-          <img id="error-icon" src="/images/icon-error.svg">
-          <button type="submit"><img src="./images/icon-arrow.svg" ></button>
+          <img id="error-icon" src="/images/icon-error.svg" style="display: none;">
+          <button type="submit"><img src="./images/icon-arrow.svg"></button>
         </div>
-        <span id="error-message"><small>Please provide a valid email</small></span>
+        <span id="error-message" style="visibility: hidden;"><small>Please provide a valid email</small></span>
       </form>
     </div>
-    <div class="main-image"><img src="images/hero-desktop.jpg"></div>
+    <div class="main-image"></div>
   </main>
   <footer>
     <p class="attribution">
